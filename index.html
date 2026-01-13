@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WATIshop - Boutique en ligne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="WATIshop Logo" width="100">
+            <h1>WATIshop</h1>
+        </div>
+        <nav>
+            <a href="#home">Accueil</a>
+            <a href="#tennis">Tennis</a>
+            <a href="#vetements-hommes">Vêtements Hommes</a>
+            <a href="#vetements-femmes">Vêtements Femmes</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Bienvenue chez WATIshop</h2>
+        <p>Découvrez nos tennis et vêtements pour hommes et femmes</p>
+    </section>
+
+    <section id="tennis">
+        <h2>Tennis</h2>
+        <div class="product-grid" id="tennis-grid"></div>
+    </section>
+
+    <section id="vetements-hommes">
+        <h2>Vêtements Hommes</h2>
+        <div class="product-grid" id="hommes-grid"></div>
+    </section>
+
+    <section id="vetements-femmes">
+        <h2>Vêtements Femmes</h2>
+        <div class="product-grid" id="femmes-grid"></div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact / Commande</h2>
+        <p>Téléphone / WhatsApp : +237690049647</p>
+        <p>Email : <a href="mailto:bryanstyves8@gmail.com">bryanstyves8@gmail.com</a></p>
+    </section>
+
+    <section id="admin">
+        <h2>Administration (Admin uniquement)</h2>
+        <form id="admin-form">
+            <input type="text" id="product-name" placeholder="Nom du produit" required>
+            <input type="text" id="product-price" placeholder="Prix (FCFA)" required>
+            <input type="text" id="product-image" placeholder="Nom fichier image dans images/" required>
+            <select id="product-category">
+                <option value="tennis">Tennis</option>
+                <option value="hommes">Vêtements Hommes</option>
+                <option value="femmes">Vêtements Femmes</option>
+            </select>
+            <button type="submit">Ajouter le produit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
